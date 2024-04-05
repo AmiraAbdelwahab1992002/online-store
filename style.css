@@ -678,7 +678,7 @@ section {
 
 
 /* Navigation Menu Styles */
-@media screen and (max-width: 150px) {
+@media screen and (max-width: 70px) {
 	.navbar {
 		display: none;
 		flex-direction: column;
