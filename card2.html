@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Quicksand", sans-serif;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin-block: 2rem;
+            gap: 2rem;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: clamp(20rem, calc(20rem + 2vw), 22rem);
+            overflow: hidden;
+            box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+            border-radius: 1em;
+            background: #ECE9E6;
+            background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+        }
+
+
+
+        .card__body {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+        }
+
+
+        .tag {
+            align-self: flex-start;
+            padding: .25em .75em;
+            border-radius: 1em;
+            font-size: .75rem;
+        }
+
+        .tag+.tag {
+            margin-left: .5em;
+        }
+
+        .tag-blue {
+            background: #56CCF2;
+            background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+            color: #fafafa;
+        }
+
+        .tag-brown {
+            background: #D1913C;
+            background: linear-gradient(to bottom, #FFD194, #D1913C);
+            color: #fafafa;
+        }
+
+        .tag-red {
+            background: #cb2d3e;
+            background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+            color: #fafafa;
+        }
+
+        .card__body h4 {
+            font-size: 1.5rem;
+            text-transform: capitalize;
+        }
+
+        .card__footer {
+            display: flex;
+            padding: 1rem;
+            margin-top: auto;
+        }
+
+        .user {
+            display: flex;
+            gap: .5rem;
+        }
+
+        .user__image {
+            border-radius: 50%;
+        }
+
+        .user__info>small {
+            color: #666;
+        }
+
+        button {
+            float: right;
+            padding: 8px 12px;
+            margin: 8px 0 0;
+            font-family: 'Montserrat', sans-serif;
+            border: 2px solid #941d56ab;
+            background: 0;
+            color: #941d56ab;
+            cursor: pointer;
+            transition: all .3s
+        }
+
+        button:hover {
+            background:  #941d56ab;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- card ofers -->
+    <div class="container">
+        <div class="card">
+            <div class="card__header">
+                <img src="https://eg.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/84/203102/1.jpg?4195" alt="">
+            </div>
+            <div class="card__body">
+                <span class="tag tag-blue">ترنج ميلتون رجالي</span>
+                <h4> جنيه 680 <s>1050 جنيه </s></h4>
+
+            </div>
+            <div class="card__footer">
+                <div class="user">
+
+                    <div class="user__info">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__header">
+                <img src="https://eg.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/21/959885/1.jpg?9319" alt="">
+            </div>
+            <div class="card__body">
+                <span class="tag tag-brown">سويت شيرت سبايدرمان</span>
+                <h4> جنيه 1000 <s>1300 جنيه </s></h4>
+
+            </div>
+            <div class="card__footer">
+                <div class="user">
+
+                    <div class="user__info">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__header">
+                <img src="https://eg.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/80/725252/1.jpg?9850" alt="">
+            </div>
+            <div class="card__body">
+                <span class="tag tag-red">هوديي رجالي</span>
+                <h4> جنيه 700 <s>900 جنيه </s></h4>
+
+            </div>
+            <div class="card__footer">
+                <div class="user">
+
+                    <div class="user__info">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__header">
+                <img src="https://eg.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/00/894862/1.jpg?2084" alt="">
+            </div>
+            <div class="card__body">
+                <span class="tag tag-blue">قمصان طويلة كاجوال</span>
+                <h4> جنيه 1200 <s>1750 جنيه </s></h4>
+
+            </div>
+            <div class="card__footer">
+                <div class="user">
+
+                    <div class="user__info">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__header">
+                <img src="https://eg.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/30/956604/1.jpg?4443" alt="">
+            </div>
+            <div class="card__body">
+                <span class="tag tag-brown">بدلة شبابي</span>
+                <h4> جنيه 1500 <s>1800 جنيه </s></h4>
+
+            </div>
+            <div class="card__footer">
+                <div class="user">
+
+                    <div class="user__info">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__header">
+                <img src="https://eg.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/47/040883/1.jpg?6858" alt="">
+            </div>
+            <div class="card__body">
+                <span class="tag tag-red">بنطلون ميلتون رجالي</span>
+                <h4> جنيه 1000 <s>1300 جنيه </s></h4>
+
+            </div>
+            <div class="card__footer">
+                <div class="user">
+
+                    <div class="user__info">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button><a href="./index.html">ارجع للصفحه</a></button>
+</body>
+
+</html>
